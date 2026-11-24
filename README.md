@@ -10,10 +10,10 @@ One letter for one day: Z — the letter of sleep, for a day with zero of it.
 
 ## Badges
 
-![Bounty](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36.svg)
-![Rank](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/emasinves0-commits/u-puan-one-letter-for-your-day-e54e9c36/rank.svg)
-![Reward](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/emasinves0-commits/u-puan-one-letter-for-your-day-e54e9c36/reward.svg)
+[![make.fun · u-puan-one-letter-for-your-day-e54e9c36](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36)
+[![rank](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/emasinves0-commits/u-puan-one-letter-for-your-day-e54e9c36/rank.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36)
+[![reward](https://make.fun/badge/u-puan-one-letter-for-your-day-e54e9c36/emasinves0-commits/u-puan-one-letter-for-your-day-e54e9c36/reward.svg)](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36)
 
 ## Bounty
 
-https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36
+[One Letter for Your Day — make.fun bounty](https://make.fun/bounty/u-puan-one-letter-for-your-day-e54e9c36)
