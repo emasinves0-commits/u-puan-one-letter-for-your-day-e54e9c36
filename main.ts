@@ -1,20 +1,27 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+// One Letter for Your Day — make.fun bounty entry.
+// The entry is a single letter, written to /output/entry.txt.
 
-// One Letter for Your Day — the entry is a single letter, A to Z,
-// standing for the word that describes the day. Z = zero sleep:
-// a night with no sleep, the most vivid, funny and true day-word
-// a single letter can carry.
-const LETTER = "Z";
+import * as fs from "node:fs";
+import * as path from "node:path";
+
 const OUTPUT_DIR = "/output";
-const OUTPUT_FILE = "entry.txt";
+const OUTPUT_FILE = path.join(OUTPUT_DIR, "entry.txt");
 
-// The gate allows exactly one character, A to Z — nothing else.
-function checkedLetter(value: string): string {
-  if (!/^[A-Z]$/.test(value)) {
-    throw new Error("entry must be exactly one letter, A to Z");
+// Guard: the entry must be exactly one character long.
+function checkedLine(line) {
+  if (line.length !== 1) {
+    throw new Error(`entry must be exactly one character, got ${line.length}`);
   }
-  return value;
+  return line;
 }
 
-mkdirSync(OUTPUT_DIR, { recursive: true });
-writeFileSync(`${OUTPUT_DIR}/${OUTPUT_FILE}`, checkedLetter(LETTER));
+// "Z" is the universal shorthand for sleep — three of them (Zzz) mean deep
+// slumber. "Z for Zero Sleep" is a day with none of it: one letter, no rest.
+const ENTRY_LETTER = "Z";
+
+const entry = checkedLine(ENTRY_LETTER);
+
+fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+fs.writeFileSync(OUTPUT_FILE, entry, "utf8");
+
+console.log(`wrote ${entry.length} byte to ${OUTPUT_FILE}`);
